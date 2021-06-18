@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "repo-cli"
+version = "0.0.1.14"
+description = "standard tooling for repo project."
+authors = ["RyomaHan <ryomahan1996@gmail.com>"]
+readme = 'README.md'
+license = "GPL-3.0-only"
+repository = 'https://github.com/ryomahan/repo-cli'
+
+[tool.poetry.dependencies]
+python = "^3.6"
+click = "^7.0"
+Jinja2 = "^3.0.1"
+moment = "^0.12.1"
+mistune = "2.0.0a4"
+Pygments = "^2.9.0"
+feedgen = "^0.9.0"
+PyYAML = "^5.4.1"
+chardet = "^4.0.0"
+Pillow = "^8.2.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5"
+pexpect = "^4.7"
+
+[tool.poetry.scripts]
+repo-cli = "repo_cli.entry:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
